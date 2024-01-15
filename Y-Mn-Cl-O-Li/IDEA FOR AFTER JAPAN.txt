@@ -1,0 +1,9 @@
+Big revamp - sad, but exciting!
+
+Instead of setting up particles via growth, like we do now, set up _noise_
+Each cell is one particle
+The interaction neighborhood drops to a Moore neighborhood of radius 1
+At each time step, if the selected cell is a solid, perform the usual reaction routine
+If it's a _liquid_, SWAP it with a neighboring cell!
+
+No more regrinding, volume scaling, etc.
